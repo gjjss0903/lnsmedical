@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+li {
+  list-style: none;
+}
+body {
+  background-color: #999;
+}
+
+
+#wrap {
+  max-width: 818px;
+}
+.inputBanner {
+  position: relative;
+}
+.input {
+  position: absolute;
+  width: 85%;
+  height: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.input form {
+  display: flex;
+  flex-direction: column;
+  height: inherit;
+}
+.input form input {
+  height: 20%;
+  border-radius: 100px;
+  outline: none;
+  margin-bottom: 3.5%;
+  font-size: 55px;
+  padding-left: 40%;
+}
+.input form input:nth-of-type(1) {
+  background: url(../images/name.png) white no-repeat center left 10%;
+  background-size: 30%;
+}
+.input form input:nth-of-type(2) {
+  background: url(../images/age.png) white no-repeat center left 10%;
+  background-size: 30%;
+}
+.input form input:nth-of-type(3) {
+  background: url(../images/tel.png) white no-repeat center left 10%;
+  background-size: 30%;
+}
+.chk {
+  color: #fff;
+  font-size: 25px;
+  width: 100%;
+  text-align: center;
+}
+.label,
+.chk span {
+  cursor: pointer;
+}
+.label input[type=checkbox] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.btns {
+  display: flex;
+  margin-top: -8%;
+}
+.btns img {
+  width: 50%;
+  cursor: pointer;
+}
+.vd {
+  margin-bottom: -0.8%;
+}
+.fix {
+  position: fixed;
+  bottom: 0%;
+  width: 818px;
+}
+.upBanner {
+  position: relative;
+}
+.upbtn {
+  position: absolute;
+  width: 60%;
+  height: 80%;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+.upbtn img {
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+}
+@media screen and (max-width:818px) {
+  .input form input {
+    font-size: 6.8vw;
+  }
+  .chk {
+    font-size: 3.1vw;
+  }
+  .label input[type=checkbox] {
+    width: 2.5vw;
+    height: 2.5vw;
+  }
+}
